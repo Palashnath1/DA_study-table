@@ -1,0 +1,144 @@
+:root {
+    --bg-dark: #0f172a;
+    --sidebar-bg: #1e293b;
+    --card-1: linear-gradient(135deg, #ff8a8a 0%, #f45b69 100%);
+    --card-2: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    --card-3: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    position: fixed;
+    padding: 30px 20px;
+}
+
+.profile-section h5 {
+    color: white;
+}
+
+.profile-section .small {
+    color: white !important;
+}
+
+.profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3b82f6;
+}
+
+.btn-logout {
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 40px;
+}
+
+/* Stat Cards */
+.stat-card {
+    padding: 25px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-gradient-1 {
+    background: var(--card-1);
+}
+
+.card-gradient-2 {
+    background: var(--card-2);
+}
+
+.card-gradient-3 {
+    background: var(--card-3);
+}
+
+.card-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    opacity: 0.2;
+}
+
+
+.table-container {
+    background: var(--sidebar-bg);
+    padding: 25px;
+    border-radius: 15px;
+}
+.table-container h4{
+    color: white;
+}
+
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.custom-table th {
+    color: #94a3b8;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.custom-table tr {
+    background: #334155;
+    transition: 0.2s;
+}
+
+.custom-table td {
+    padding: 15px;
+    color: white;
+}
+
+.custom-table tr:hover {
+    background: #475569;
+}
+
+/* Action Buttons */
+.btn-action {
+    padding: 6px 15px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: white !important;
+}
+
+.btn-edit {
+    background: #3b82f6;
+}
+
+.btn-delete {
+    background: #ef4444;
+}
